@@ -28,7 +28,7 @@ public class Main {
     public static void medicHealth() {
 
         for (int i = 0; i < heroesHealth.length; i++) {
-            if (heroesHealth[3] > 0 && heroesHealth[i] < 100 && heroesHealth[i] > 0) {
+            if (heroesHealth[3] > 0 && heroesHealth[i] < 100 && heroesHealth[i] > 0 && heroesAttackType[i]!="Medic") {
                 Random rando = new Random();
                 int random = rando.nextInt(80);
                 heroesHealth[i] = heroesHealth[i] + random;
