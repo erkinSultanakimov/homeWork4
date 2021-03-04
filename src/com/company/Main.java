@@ -48,7 +48,7 @@ public class Main {
         bossDefenceType = changeBossDefence();
         System.out.println("Hero " + bossDefenceType + " Boss receive super damage");
         bossHits();
-        //medicHealth();
+        medicHealth();
         heroesHits();
         printStatistics();
 
@@ -113,7 +113,7 @@ public class Main {
 
     public static String changeBossDefence() {
         Random random = new Random();
-        int randomIndex = random.nextInt(heroesAttackType.length);
+        int randomIndex = random.nextInt(2);
         return heroesAttackType[randomIndex];
     }
 
